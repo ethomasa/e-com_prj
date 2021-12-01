@@ -1,0 +1,31 @@
+{
+  "name": "e-com_prj",
+  "version": "1.0.0",
+  "description": "final project for UofM bootcamp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server",
+    "server": "nodemon server/server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethomasa/e-com_prj.git"
+  },
+  "author": "Eby Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ethomasa/e-com_prj/issues"
+  },
+  "homepage": "https://github.com/ethomasa/e-com_prj#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.14"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  }
+}
