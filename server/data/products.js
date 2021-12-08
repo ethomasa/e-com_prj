@@ -1,7 +1,7 @@
 const products = [
   {
     
-    name: 'Airpods Wireless Bluetooth Headphones',
+    name: 'AirPods (3rd generation)',
     image: '/images/airpods.jpg',
     description:
       'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
@@ -27,13 +27,13 @@ const products = [
   },
   {
     
-    name: 'Canon EOS 80D DSLR Camera',
-    image: '/images/camera.jpg',
+    name: 'Echo Link - Stream hi-fi music',
+    image: '/images/echolink.jpg',
     description:
-      'Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design',
-    brand: 'Canon',
+    'With Echo Link and an Echo device, you can create voice-controlled music groups throughout your home and play streaming music wherever your system goes—the whole house, in one room, or outside. Or plug in a stereo component—like an amplified turntable, CD player, or MP3 player—and cast music to multiple Echo speakers at once. You can also stream high-fidelity music on your headphones.',
+    brand: 'Amazon',
     category: 'Electronics',
-    price: 929.99,
+    price: 129.99,
     countInStock: 5,
     rating: 3,
     numReviews: 12,
@@ -77,6 +77,30 @@ const products = [
     rating: 4,
     numReviews: 12,
   },
+  {
+  name: 'Apple Watch Series 7',
+  image: '/images/watch.jpg',
+  description:
+    'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
+  brand: 'Apple',
+  category: 'Electronics',
+  price:429.99,
+  countInStock: 0,
+  rating: 4,
+  numReviews: 12,
+},
+{
+name: 'Amazon Echo Dot 3rd Generation',
+image: '/images/bose.jpg',
+description:
+  'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
+brand: 'Amazon',
+category: 'Electronics',
+price: 29.99,
+countInStock: 0,
+rating: 4,
+numReviews: 12,
+}
 ]
 
 module.exports = products
