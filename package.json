@@ -10,9 +10,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "import": "node server/seeder",
     "destroy": "node server/seeder -d"
-   
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ethomasa/e-com_prj.git"
