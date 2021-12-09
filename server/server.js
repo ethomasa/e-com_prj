@@ -20,10 +20,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-    res.send('API is running...')
-  })
-  
+
   
 app.use ('/api/products', productRoutes)
 app.use('/api/users', userRoutes)
@@ -35,16 +32,14 @@ app.get('/api/config/paypal', (req, res) =>
 )
 
 
-
-// Serve up static assets
-app.use('/images', express.static(path.join(__dirname, '../client/images')));
-
+// if we're in production, serve client/build as static assets
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
+
 }
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
 
