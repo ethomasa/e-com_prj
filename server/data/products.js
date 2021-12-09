@@ -90,7 +90,7 @@ const products = [
   numReviews: 12,
 },
 {
-name: 'Amazon Echo Dot 3rd Generation',
+name: 'Bose SoundLink II',
 image: '/images/bose.jpg',
 description:
   'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
