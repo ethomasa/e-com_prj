@@ -29,6 +29,7 @@ app.use ('/api/products', productRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/orders', orderRoutes)
 const path = require('path');
+
 app.get('/api/config/paypal', (req, res) =>
   res.send(process.env.STRIPE_SECRET_KEY)
 )
